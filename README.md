@@ -10,7 +10,7 @@ ONLY RUNS LOCALY - INSTRUCTIONS TO RUN
 7. Make sure you have a live instance of Spotify running on your machine
 8. In your command line type "python spotify.py" to run Flask app
 9. Then in your file explorer, run the index.html application
-10. Click "Run Script" and check your Spotify app and there will be a new reccomended song in your queue
+10. Click "Run Script" and check your Spotify app and there will be a new recomended song in your queue
 
 
 HOW RECOMMEND BOT WORKS
