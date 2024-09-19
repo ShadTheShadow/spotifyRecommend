@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        title {text-align: center;}
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        button {text-align: center;}
+        .wrapper {
+        text-align: center;
+        }
+
+        .button {
+        position: absolute;
+        left: 47%;
+        }
+        </style>
+        </head>
+<head>
+    <title>Spotify Recommend</title>
+</head>
+<body>
+    <h1>Want a song?</h1>
+    <div class = "wrapper"></div>
+        <button class = "button" onclick="runScript()">Run Script</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        async function runScript() {
+            const response = await fetch('http://127.0.0.1:5000/run-script', {
+                method: 'POST'
+            });
+            const result = await response.json();
+            document.getElementById('result').innerText = result.result;
+        }
+    </script>
+</body>
+</html>
