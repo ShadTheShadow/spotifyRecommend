@@ -22,8 +22,8 @@ def run_script():
 
 
     
-    id1 = "1215748776fb4ad5a5b1f8d0370c9ba3"
-    id2 = "8a2df0f7195a46269b2cdfe10b7b012d"
+    id1 = "ENTER ID"
+    id2 = "CLIENT SECRET"
 
     credentials = f"{id1}:{id2}"
     credentials_base64 = base64.b64encode(credentials.encode())
@@ -47,7 +47,7 @@ def run_script():
 
 
 
-    custom_cache_path = 'C:/Users/evant/vscode/.cache'
+    custom_cache_path = 'CUSTOM CACHE'
 
 
 
@@ -95,15 +95,6 @@ def run_script():
             
             #random genre
             def pickGenre():
-
-                #if (searchyCall > 4):
-
-                    #rando = sp.recommendation_genre_seeds()
-
-                    #rando = random.choice(rando['genres'])
-
-                    #return random.choice(rando)
-
 
 
                 tracks = sp.tracks(track_ids)['tracks']
@@ -222,17 +213,6 @@ def run_script():
 
 
     print("thanks for using the app!")
-
-
-
-
-
-
-
-
-
-
-
 
 
 
